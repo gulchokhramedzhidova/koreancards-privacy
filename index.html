@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>KoreanCards — Privacy Policy / Политика конфиденциальности</title>
+<style>
+body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; color: #333; }
+h1 { color: #7C3AED; }
+h2 { color: #555; margin-top: 30px; }
+.lang-switch { margin-bottom: 30px; }
+.lang-switch button { padding: 8px 20px; margin-right: 10px; border: 2px solid #7C3AED; border-radius: 20px; background: white; color: #7C3AED; cursor: pointer; font-size: 16px; }
+.lang-switch button.active { background: #7C3AED; color: white; }
+#ru { display: none; }
+</style>
+</head>
+<body>
+<div class="lang-switch">
+  <button class="active" onclick="show('en')">English</button>
+  <button onclick="show('ru')">Русский</button>
+</div>
+
+<div id="en">
+<h1>Privacy Policy — KoreanCards</h1>
+<p><em>Last updated: February 28, 2026</em></p>
+<h2>1. General</h2>
+<p>KoreanCards ("App") is developed by Gulchokhra Medzhidova. This Privacy Policy explains what data the App collects and how it is used.</p>
+<h2>2. Data We Collect</h2>
+<p>The App may collect: email address and name upon registration, learning progress (studied words, statistics, streak), voice recordings for pronunciation practice (stored locally on your device only), notification reminder time (stored locally).</p>
+<h2>3. How We Use Your Data</h2>
+<p>Data is used solely to provide app functionality and personalise your learning experience. We do not sell or share your data with third parties.</p>
+<h2>4. Data Storage</h2>
+<p>All data is stored locally on your device. When you delete your account, all data is permanently deleted.</p>
+<h2>5. Permissions</h2>
+<p>The App requests microphone access to record your pronunciation and notification permission for daily reminders. Both permissions are optional.</p>
+<h2>6. Children</h2>
+<p>The App is not intended for children under 13 and does not knowingly collect data from children.</p>
+<h2>7. Contact</h2>
+<p>For privacy questions: gulchokhramedzhidova@gmail.com</p>
+</div>
+
+<div id="ru">
+<h1>Политика конфиденциальности — KoreanCards</h1>
+<p><em>Последнее обновление: 28 февраля 2026 года</em></p>
+<h2>1. Общие положения</h2>
+<p>KoreanCards разработано Gulchokhra Medzhidova. Настоящая политика описывает какие данные собирает приложение и как они используются.</p>
+<h2>2. Какие данные мы собираем</h2>
+<p>Email и имя при регистрации, прогресс обучения, аудиозаписи произношения (хранятся только на устройстве), время напоминаний.</p>
+<h2>3. Как мы используем данные</h2>
+<p>Данные используются исключительно для работы приложения. Мы не продаём и не передаём данные третьим лицам.</p>
+<h2>4. Хранение данных</h2>
+<p>Данные хранятся локально на вашем устройстве. При удалении аккаунта все данные удаляются безвозвратно.</p>
+<h2>5. Разрешения</h2>
+<p>Приложение запрашивает доступ к микрофону для записи произношения и разрешение на уведомления для напоминаний. Оба разрешения опциональны.</p>
+<h2>6. Дети</h2>
+<p>Приложение не предназначено для детей младше 13 лет.</p>
+<h2>7. Контакт</h2>
+<p>По вопросам: gulchokhramedzhidova@gmail.com</p>
+</div>
+
+<script>
+function show(lang) {
+  document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+  document.getElementById('ru').style.display = lang === 'ru' ? 'block' : 'none';
+  document.querySelectorAll('.lang-switch button').forEach((b, i) => {
+    b.classList.toggle('active', (i === 0 && lang === 'en') || (i === 1 && lang === 'ru'));
+  });
+}
+</script>
+</body>
+</html>
